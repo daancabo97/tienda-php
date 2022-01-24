@@ -1,25 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,  initial-scale=1, maximum-scale=1, user-scalable=no">
+        <title>PROYECTO TIENDA</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,  initial-scale=1, maximum-scale=1, user-scalable=no">
+        <!--short icon!-->
+        <link rel="shortcut icon" href="#">
 
-    <title>PROYECTO TIENDA</title>
+        <!--CSS !-->
+        <link rel="stylesheet" href="<?=base_url?>./assets/css/styles.css">
 
-    <!--short icon!-->
-    <link rel="shortcut icon" href="#">
-
-    <!--CSS !-->
-    <link rel="stylesheet" href="./assets/css/styles.css">
-
-    <!--font awesome!-->
-    <script src="https://kit.fontawesome.com/46fc319774.js" crossorigin="anonymous"></script>
-    <script defer src="index.js"></script>
+        <!--font awesome!-->
+        <script src="https://kit.fontawesome.com/46fc319774.js" crossorigin="anonymous"></script>
+        <script defer src="index.js"></script>
 </head>
 
-<body>
 
     <div class="contenedor-general">
 
@@ -28,7 +25,7 @@
 
             <!-- LOGO -->
             <div id="logo" class="logo">
-                <a class="titulo" href="index.php">
+                <a class="titulo" href="#">
                     <i class="fab fa-php"></i> Tienda
                 </a>
             </div>
