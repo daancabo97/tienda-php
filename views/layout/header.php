@@ -10,14 +10,14 @@
         <link rel="shortcut icon" href="#">
 
         <!--CSS !-->
-        <link rel="stylesheet" href="<?=base_url?>./assets/css/styles.css">
+        <link rel="stylesheet" href="<?=base_url?>./assets/css/styles.css?ts=<?=time()?>">
 
         <!--font awesome!-->
         <script src="https://kit.fontawesome.com/46fc319774.js" crossorigin="anonymous"></script>
         <script defer src="index.js"></script>
 </head>
-
-
+<body>
+    
     <div class="contenedor-general">
 
         <!-- CABECERA header -->
