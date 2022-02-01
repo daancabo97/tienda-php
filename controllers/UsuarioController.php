@@ -19,25 +19,28 @@ class usuarioController{
             $email = isset($_POST['email']) ? $_POST['email'] : false;
             $password = isset($_POST['password']) ? $_POST['password'] : false;
 
-            if($nombre && $apellidos && $email && $password){
+            $validar = Utils::validate($nombre, $apellidos, $email, $password);
+          
+            if($validar == false){
                 $usuario = new Usuario();
                 $usuario->setNombre($nombre);
                 $usuario->setApellidos($apellidos);
                 $usuario->setEmail($email);
                 $usuario->setPassword($password);
-
 				$save = $usuario->save();
+
                 if ($save) {
                     $_SESSION['register'] = "complete";
                 } else {
                     $_SESSION['register'] = "failed";
                 }
             }else{
-                $_SESSION['register'] = "failed";
+                $_SESSION['register'] = $validar;
             }
         }else{
-            $_SESSION['register'] = "failed";
+            $_SESSION['register'] = "<strong class='alerta-error'>Ha habido un error</strong>";
         }    
+        
         header("Location:".base_url.'usuario/registro');
         ob_end_flush();
         }
