@@ -11,6 +11,7 @@ class Utils{
         return $name;
     }
 
+
 /*===============================
    Validacion campos de registro 
  ================================*/

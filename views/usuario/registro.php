@@ -10,24 +10,36 @@
         echo $error;
     endif; ?>
     
-        <label for="nombre">Nombre</label>
-        <input type="text" name="nombre" placeholder="Nombre" required />
 
-        <label for="apellidos">Apellidos</label>
-        <input type="text" name="apellidos" placeholder="Apellidos" required />
+            <?php if (isset($_SESSION['register']['nombre'])) : ?>
+                <strong class="alerta-error"><?= $_SESSION['register']['nombre'] ?></strong>
+            <?php endif;?>
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" placeholder="Nombre" required />
 
-        <label for="email">Email</label>
-        <input type="text" name="email" placeholder="Email" required />
+                    <?php if (isset($_SESSION['register']['apellidos'])) : ?>
+                        <strong class="alerta-error"><?=$_SESSION['register']['apellidos'] ?></strong>
+                    <?php endif;?>  
+                        <label for="apellidos">Apellidos</label>
+                        <input type="text" name="apellidos" placeholder="Apellidos" required />
 
-        <label for="password">Contraseña</label>
-        <input type="password" name="password" placeholder="Contraseña" required />
+                            <?php if (isset($_SESSION['register']['email'])) : ?>
+                                <strong class="alerta-error"><?= $_SESSION['register']['email'] ?></strong>
+                            <?php endif;?>
+                                <label for="email">Email</label>
+                                <input type="text" name="email" placeholder="Email" required />
 
-        <input type="submit" value="Registrarse" required />
-        
-    </form>
+                                    <?php if (isset($_SESSION['register']['password'])) : ?>
+                                        <strong class="alerta-error"><?= $_SESSION['register']['password'] ?></strong>
+                                    <?php endif;?>    
+                                        <label for="password">Contraseña</label>
+                                        <input type="password" name="password" placeholder="Contraseña" required />
 
-<?php Utils::deleteSession('register')?>
-</div>
+                                            <input type="submit" value="Registrarse" required />
+
+                                        </form>
+                        <?php Utils::deleteSession('register')?>
+                    </div>
 
 
 
