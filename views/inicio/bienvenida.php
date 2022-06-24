@@ -12,6 +12,7 @@ lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus co
 Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc 
 venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis.
 Integer fringilla congue eros non fermentum. .</p>
+<br>
 <p><img src="<?=base_url?>assets/img/empanada5.jpg" style="" class="img-bienvenida">
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, 
 nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula
