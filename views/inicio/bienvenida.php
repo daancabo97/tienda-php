@@ -1,4 +1,4 @@
-<h1>Bienvenido a Bendita Empanada</h1>
+<h1>Bienvenido a Bendita Empanada 🥟</h1>
 
 
 <h2>¿Quienes somos?</h2>
