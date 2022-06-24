@@ -47,6 +47,24 @@ i
     margin-right:15px;
 }
 
+/* Contacto */
+.seccion {
+    margin-left:5%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+#contactenos iframe {
+  
+    left: 0;
+    width: 95%;
+    min-height: 50%;
+    margin-top:-2.5%;
+
+    /*filter:grayscale(1);*/
+   
+}
+
 /* Contenedor general */
 .contenedor-general
  {

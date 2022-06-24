@@ -1,7 +1,7 @@
-<h1>Bienvenidos a Bendita Empanada</h1>
+<h1>Bienvenido a Bendita Empanada</h1>
 
 
-<h2>Quienes somos</h2>
+<h2>¿Quienes somos?</h2>
 
 <p><img src="<?=base_url?>assets/img/empanadashornodebarro.jpg" style="" class="img-bienvenida">
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, 
