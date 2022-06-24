@@ -8,14 +8,16 @@
                   <div class="product">
                         <a href="<?= base_url ?>producto/ver&id=<?= $product->id ?>">
                               <?php if ($product->imagen != null) : ?>
-                                    <img src="<?= base_url ?>uploads/images/<?= $product->imagen ?>" />
+                                    <img src="<?= base_url ?>uploads/images/<?= $product->imagen ?>" class="img-categoria" />
                               <?php else : ?>
                                     <img src="<?= base_url ?>assets/img/pexels-tembela-bohle-1089932.jpg" />
                               <?php endif; ?>
                               <h2><?= $product->nombre ?></h2>
                         </a>
                         <p><?= $product->precio ?></p>
-                        <a href="<?= base_url ?>carrito/add&id=<?=$product->id?>" class="button">comprar</a>
+                        <br>
+                        <a href="<?= base_url ?>carrito/add&id=<?=$product->id?>" class="boton boton-ver">comprar</a>
+                        <br>
                   </div>
             <?php endwhile; ?>
 

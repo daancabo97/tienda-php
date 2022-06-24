@@ -8,7 +8,7 @@
     <?php if($product->imagen != null):?>  
        <img src="<?=base_url?>uploads/images/<?=$product->imagen?>"  >
     <?php else:?>   
-        <img src="<?=base_url?>assets/img/empanada1.png" />
+        <img src="<?=base_url?>assets/img/empanad.png" />
     <?php endif;?>   
            <h6><?=$product->nombre?></h6>
        </a>
