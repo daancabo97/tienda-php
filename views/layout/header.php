@@ -25,8 +25,8 @@
 
             <!-- LOGO -->
             <div id="logo" class="logo">
-                <a class="titulo" href="#">
-                    <i class="fab fa-php"></i> Bendita <br> Empanada
+                <a class="titulo" href="<?=base_url?>usuario/logout">
+                    <i class="fab fa-php"></i> Bendita Empanada
                 </a>
             </div>
                 <!-- MENU -->
@@ -39,7 +39,7 @@
                         <ul class="nav-menu">  
                              
                         <li class="nav-menu-item">
-                            <a href="index.php" class="nav-menu-link nav-link nav-menu-link_active">INICIO</a>
+                            <a href="<?=base_url?>inicio/bienvenida" class="nav-menu-link nav-link nav-menu-link_active">INICIO</a>
                         </li>
                             <?php while($cat = $categorias->fetch_object()): ?>
                                 <li class="nav-menu-item">
@@ -49,7 +49,7 @@
                     
                     <!--!-->
                     <li class="nav-menu-item">
-                        <a href="index.php" class="nav-menu-link nav-link nav-menu-link_active">CONTACTO</a>
+                        <a href="<?=base_url?>contacto/contactoForm" class="nav-menu-link nav-link nav-menu-link_active">CONTACTO</a>
                     </li>
                     <!--!-->
                 </ul>

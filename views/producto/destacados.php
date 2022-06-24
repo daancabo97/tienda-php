@@ -8,7 +8,7 @@
     <?php if($product->imagen != null):?>  
        <img src="<?=base_url?>uploads/images/<?=$product->imagen?>"  >
     <?php else:?>   
-        <img src="<?=base_url?>assets/img/empanad.png" />
+        <img src="<?=base_url?>assets/img/empanada1.png" />
     <?php endif;?>   
            <h6><?=$product->nombre?></h6>
        </a>
@@ -18,7 +18,7 @@
    <?php endwhile; ?>
    <!--!-->
    <div id="ver-todas">
-       <a href="">Ver mas</a>
+       <a href="<?=base_url?>inicio/bienvenida">Ver mas</a>
    </div>
 
   

@@ -14,7 +14,8 @@
             <input type="submit" value="Entrar" />
          </form>
          <?php else : ?>
-                 <h3> BIENVENID@</br> <?=$_SESSION['identity']->nombre?> <?=$_SESSION['identity']->apellidos?></h3>
+            <h2>BIENVENID@</h2>
+                 <h3></br> <?=$_SESSION['identity']->nombre?> <?=$_SESSION['identity']->apellidos?></h3>
          <?php endif; ?>
     </div>
    
