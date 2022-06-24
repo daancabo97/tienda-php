@@ -5,20 +5,23 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="columna columna-50 columna-mobile-100 empujar-50 empujar-mobile-0 sinpadding-mobile">
-                    <br>
-                        <form action="index.php" method="post">
+                        <form action="<?=base_url?>contacto/contactoForm" method="POST">
                             <div class="form-block">
-                                <input type="text" name="nombre" class="form-control" placeholder="nombre">
+                                <label for="">Nombre:</label>
+                                <input type="text" name="nombre" class="form-control" placeholder="nombre" required>
                             </div>
-                            <br>
                             <div class="form-block">
-                                <input type="email" name="email" class="form-control" placeholder="email">
+                                <label for="">Email:</label>
+                                <input type="email" name="email" class="form-control" placeholder="email" required>
                             </div>
-                            <br>
                             <div class="form-block">
-                                <textarea name="texto"class="form-control" placeholder="Escribenos tu consulta"></textarea>
+                                <label for="">Asunto:</label>
+                                <input type="text" name="asunto" class="form-control" placeholder="email" required>
                             </div>
-                            <br>
+                            <div class="form-block">
+                                <label for="">Mensaje:</label>
+                                <textarea name="texto"class="form-control" placeholder="Escribenos tu consulta" required></textarea>
+                            </div>
                             <div class="form-block bloque-ultimo">
                                 <input type="submit" class="boton-negro" value="Enviar">
                             </div>

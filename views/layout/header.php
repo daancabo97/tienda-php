@@ -15,6 +15,7 @@
         <!--font awesome!-->
         <script src="https://kit.fontawesome.com/46fc319774.js" crossorigin="anonymous"></script>
         <script defer src="index.js"></script>
+        
 </head>
 <body>
     
@@ -26,7 +27,7 @@
             <!-- LOGO -->
             <div id="logo" class="logo">
                 <a class="titulo" href="<?=base_url?>usuario/logout">
-                    <i class="fab fa-php"></i> Bendita Empanada
+                    <i class="fab fa-php" style="color:yellow;font size:12px;"><h6 style="font-family:Verdana, Geneva, Tahoma, sans-serif;">Bendita🥟</h6></i> 
                 </a>
             </div>
                 <!-- MENU -->
