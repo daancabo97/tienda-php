@@ -48,12 +48,12 @@ class usuarioController
             $_SESSION['register'] = "<strong class='alerta-error'>Ha habido un error</strong>";
         }
 
-        header("Location:" . base_url . 'usuario/registro');
+        header("Location:".base_url.'usuario/registro');
         ob_end_flush();
     }
 
 
-    # Funcion inicio de sesion    
+    # Funcion inicio de sesion segun el rol  
     public function login()
     {
         if (isset($_POST)) {
@@ -91,6 +91,6 @@ class usuarioController
             unset($_SESSION['admin']);
         }
 
-        header("Location:" . base_url);
+        header("Location:".base_url);
     }
 }

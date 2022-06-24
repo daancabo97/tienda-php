@@ -19,7 +19,7 @@ body {
 
     color: white;
     text-decoration: none;
-    font-size:30px;
+    font-size:90%;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     text-shadow:1px 1px 2px rgb(0, 0, 0);
 
@@ -37,7 +37,6 @@ i
 {
     font-size:30px;
 }
-
 
 
 
@@ -216,6 +215,8 @@ i
         margin: 5px;
         border: 1px solid #ccc;
         float: left;
+        margin-right:2%;
+        margin-left:2%;
         width: 180px;
         margin-top:6%;
         border-top-left-radius: 4px;
@@ -230,10 +231,10 @@ i
       }
       
       div.gallery img {
-        width: 80%;
-        height: auto;
-        margin-left: 10%;
-        margin-top:10%;
+        width: 100%;
+        height: 100%;
+        
+       
       }
       
       div.desc {
@@ -256,6 +257,31 @@ i
         
     }
 
+    .precio{
+        color:red;
+        text-align: center;
+    }
+
+    td{
+        border-top: 1px solid #555;   
+    }
+
+    table{
+        border: 1px solid #555;
+        border-collapse: collapse;
+        text-align:center;
+        width: 100%;
+
+    }
+      
+      th, td {
+        text-align: center;
+        padding: 8px;
+      }
+    
+    .thumb{
+        width: 40%;
+    }
 
 /* Contenedor general -sidebar*/
 .contenedor-general .sidebar {                    
@@ -291,7 +317,9 @@ i
 label,
 input[type="text"],
 input[type="email"],
-input[type="password"]{
+input[type="password"],
+input[type="number"],
+select, textarea{
 
     display:block;
     width: 95%;
@@ -336,6 +364,7 @@ input[type="submit"]:hover{
 
 }
 
+
 /* cerrar sesion sidebar login*/
 
 
@@ -343,7 +372,7 @@ input[type="submit"]:hover{
 
     cursor:pointer;
     padding:10px;
-    color:white;
+    color:white !important;
     background: #d10000;
     border:solid 2px #d10000;
     border-radius: 4px;
@@ -360,47 +389,76 @@ input[type="submit"]:hover{
     
 }
 
+.botonA{
+
+    cursor:pointer;
+    padding:10px;
+    text-align:center;
+    color:white !important;
+    margin-bottom: 5%;
+    background: rgb(0, 54, 124);
+    border:solid 2px rgb(0, 54, 124);
+    border-radius: 4px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    text-decoration:none;
+    position:inherit;
+    top:-15px;
+    width:30%;
+    display:block;
+    box-shadow: 0px 0px 1px rgba(0,0,0,0.3),0px 3px 7px rgba(63, 52, 52, 0.3),0px 0px 1px #FFFFFF inset;
+
+}
+
+.botonA:hover{
+    color:rgb(0, 54, 124) !important;
+    background: white !important;
+    border:solid 2px rgb(0, 54, 124);
+    transition: 0.3s;
+}
+
 
 .boton:hover{
 
-    color:#d10000;;
+    color:#d10000;
     background: #ffffff;
     border:solid 2px #d10000;
     transition: 0.3s;
 
 }
 
+
 .boton-crear
 {
-    color:white;
+    color:white !important;
     background: #ff8800;
     border:solid 2px #ff8800;
 }
 
 .boton-crear:hover
 {
-    color:#ff8800;
+    color:#ff8800 !important;
     background: white;
     border:solid 2px #ff8800;
 }
 
 .boton-ver
 {
-    color:white;
+    color:white !important;
     background: #1f9b00;
     border:solid 2px #1f9b00;
 }
 
 .boton-ver:hover
 {
-    color:#1f9b00;
+    color:#1f9b00 !important;
     background: white;
     border:solid 2px #1f9b00;
 }
 
 .boton-categoria
 {
-    color:white;
+    color:white !important;
     background: rgb(0, 54, 124);
     border:solid 2px rgb(0, 54, 124);
 }
@@ -431,7 +489,7 @@ input[type="submit"]:hover{
     width: 95%;;
     font-size:14px;
     border-radius: 4px;
-    Color:white;
+    Color:white !;
     background-color:rgb(255, 0, 0);
     margin-bottom:10px;
 
@@ -445,6 +503,7 @@ input[type="submit"]:hover{
     font-size:14px;
 
 }
+
 
 
 /* Contenedor general -footer*/
@@ -554,8 +613,7 @@ input[type="submit"]:hover{
     /*Boton ver todas*/
 
     #ver-todas a{
-
-       
+ 
         padding:0;
         min-height: 30px;
         width: 200px;
@@ -564,6 +622,15 @@ input[type="submit"]:hover{
         margin-left:20%;
         transition:0.3s;
     
+    }
+
+
+    
+    /*botonA*/
+    .botonA{
+
+        width: 50%;    
+        transition:0.3s;    
     }
 
     /*Productos contenedor general- contenido principal*/
@@ -606,6 +673,11 @@ input[type="submit"]:hover{
        
     
     }
+
+    
+    
+
+    
 
     }
 

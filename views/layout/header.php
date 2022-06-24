@@ -26,95 +26,37 @@
             <!-- LOGO -->
             <div id="logo" class="logo">
                 <a class="titulo" href="#">
-                    <i class="fab fa-php"></i> Tienda
+                    <i class="fab fa-php"></i> Bendita <br> Empanada
                 </a>
             </div>
-
-
-            <!-- MENU -->
-            <nav id="menu" class="nav">
-
-                <button class="toggle" aria-label="Abrir menu">
-                    <i class="fas fa-bars"></i>
-                </button>
-
-                <ul class="nav-menu ">
-                    <!--!-->
-                    <li class="nav-menu-item">
-                        <a href="index.php" class="nav-menu-link nav-link">Inicio</a>
-                    </li>
-                    <!--!-->
-
-
-                    <!--!-->
-                    <li class="nav-menu-item">
-                        <a href="categoria.php?id3" class="nav-menu-link nav-link">Python</a>
-                    </li>
-                    <!--!-->
-
-
-                    <!--!-->
-                    <li class="nav-menu-item">
-                        <a href="categoria.php?id5" class="nav-menu-link nav-link">JS</a>
-                    </li>
-                    <!--!-->
-
-
-                    <!--!-->
-                    <li class="nav-menu-item">
-                        <a href="categoria.php?id7" class="nav-menu-link nav-link">JAVA</a>
-                    </li>
-                    <!--!-->
-
-
-                    <!--!-->
-                    <li class="nav-menu-item">
-                        <a href="categoria.php?id8" class="nav-menu-link nav-link">Php</a>
-                    </li>
-                    <!--!-->
-
-
-                    <!--!-->
-                    <li class="nav-menu-item">
-                        <a href="categoria.php?id10" class="nav-menu-link nav-link">RUBY</a>
-                    </li>
-                    <!--!-->
-
-
-                    <!--!-->
-                    <li class="nav-menu-item">
-                        <a href="categoria.php?id10" class="nav-menu-link nav-link">DATA BASES</a>
-                    </li>
-                    <!--!-->
-
-
+                <!-- MENU -->
+                <?php $categorias = Utils::showCategorias(); ?>
+                    <nav id="menu" class="nav">
+                        <button class="toggle" aria-label="Abrir menu">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                    <!-- Traer nombres de las categorias -->
+                        <ul class="nav-menu">  
+                             
+                        <li class="nav-menu-item">
+                            <a href="index.php" class="nav-menu-link nav-link nav-menu-link_active">INICIO</a>
+                        </li>
+                            <?php while($cat = $categorias->fetch_object()): ?>
+                                <li class="nav-menu-item">
+                                    <a href="<?=base_url?>categoria/ver&id=<?=$cat->id?>" class="nav-menu-link nav-link"><?=$cat->nombre?></a>
+                                </li>
+                            <?php endwhile; ?>    
                     
                     <!--!-->
                     <li class="nav-menu-item">
-                        <a href="categoria.php?id9" class="nav-menu-link nav-link">Sist. operativos</a>
-                    </li>
-                    <!--!-->
-
-
-
-
-
-                    <!--!-->
-                    <li class="nav-menu-item">
-                        <a href="index.php" class="nav-menu-link nav-link">Sobre mi</a>
-                    </li>
-                    <!--!-->
-                    <li class="nav-menu-item">
-                        <a href="index.php" class="nav-menu-link nav-link nav-menu-link_active">Contacto</a>
+                        <a href="index.php" class="nav-menu-link nav-link nav-menu-link_active">CONTACTO</a>
                     </li>
                     <!--!-->
                 </ul>
             </nav>
-
-            <div class="clearfix"></div>
+  <!-- MENU -->
+    <div class="clearfix"></div>
         </header>
-
-
 
         <!-- <div id="contenedor"> -->
 
